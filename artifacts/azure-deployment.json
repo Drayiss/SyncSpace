@@ -1,0 +1,13 @@
+{
+  "image": "syncspacep46ddfekmoxru.azurecr.io/syncspace:20261011-145112",
+  "region": "westus3",
+  "postgresHost": "syncspace-pg-p46ddfekmoxru.postgres.database.azure.com",
+  "appName": "syncspace-app",
+  "deployedAt": "2026-10-11T19:03:59.0691928Z",
+  "resourceGroup": "syncspace-demo",
+  "url": "https://syncspace-app.whiteriver-3fe4479b.westus3.azurecontainerapps.io",
+  "existingEnvironmentResourceId": "/subscriptions/43085005-8b00-4cf6-b510-40a4e334abd2/resourceGroups/opsflow-demo/providers/Microsoft.App/managedEnvironments/opsflow-standard-environment",
+  "subscriptionId": "43085005-8b00-4cf6-b510-40a4e334abd2",
+  "registryName": "syncspacep46ddfekmoxru",
+  "imageDigest": "sha256:ce2f06d30338e228adf363e6ecdf4b9a48327fb3b8daf2a4f614ca1f73d3bb5f"
+}

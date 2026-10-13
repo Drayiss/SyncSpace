@@ -1,0 +1,4 @@
+using './main.bicep'
+param image = 'ghcr.io/YOUR-GITHUB-USERNAME/syncspace:1.0.0'
+param prefix = 'syncspace'
+param postgresPassword = readEnvironmentVariable('SYNCSPACE_POSTGRES_PASSWORD')

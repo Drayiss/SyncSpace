@@ -1,0 +1,42 @@
+[
+  {
+    "replica": "syncspace-app--6wr5kuk-777d69b8f7-bppw5",
+    "structuredLogCount": 50,
+    "samples": [
+      {
+        "timestamp": "2026-10-11T15:05:08.7209619-04:00",
+        "level": "Information",
+        "category": "SyncSpace.Realtime",
+        "message": "Committed 3213ad71-991b-491f-85f6-ab2884f1ded0 revision 2 batch 7e7e431e-4bb2-4609-a9af-f1b4df468ce9",
+        "traceId": "ef7473b112eec394656d4c272d3b3040"
+      },
+      {
+        "timestamp": "2026-10-11T15:05:08.8122179-04:00",
+        "level": "Information",
+        "category": "SyncSpace.Realtime",
+        "message": "Committed 3213ad71-991b-491f-85f6-ab2884f1ded0 revision 3 batch c01c5397-f171-4407-9648-faabbcbd91c2",
+        "traceId": "ef7473b112eec394656d4c272d3b3040"
+      }
+    ]
+  },
+  {
+    "replica": "syncspace-app--6wr5kuk-777d69b8f7-jv7mr",
+    "structuredLogCount": 42,
+    "samples": [
+      {
+        "timestamp": "2026-10-11T15:05:06.471771-04:00",
+        "level": "Information",
+        "category": "SyncSpace.Realtime",
+        "message": "Committed 4e4c3211-3275-4fe2-a9f1-e7cbce13fb5e revision 1 batch 91b4d34d-7cf2-47c7-8ec0-420a193b86ec",
+        "traceId": "c34ad7ba6c1f5201fcf835885d153fef"
+      },
+      {
+        "timestamp": "2026-10-11T15:05:07.7520271-04:00",
+        "level": "Information",
+        "category": "SyncSpace.Realtime",
+        "message": "WebSocket joined 3213ad71-991b-491f-85f6-ab2884f1ded0 as f5dc21037a844bfa8cfcda91e6680034",
+        "traceId": "221fe8c72cbe8a82b9907cb8fe07509c"
+      }
+    ]
+  }
+]

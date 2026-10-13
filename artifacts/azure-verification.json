@@ -1,0 +1,31 @@
+{
+  "verifiedAt": "2026-10-11T19:07:42.2096049Z",
+  "url": "https://syncspace-app.whiteriver-3fe4479b.westus3.azurecontainerapps.io",
+  "deploymentState": "Succeeded",
+  "revision": "syncspace-app--6wr5kuk",
+  "replicas": [
+    {
+      "name": "syncspace-app--6wr5kuk-777d69b8f7-bppw5",
+      "ready": true,
+      "state": "Running"
+    },
+    {
+      "name": "syncspace-app--6wr5kuk-777d69b8f7-jv7mr",
+      "ready": true,
+      "state": "Running"
+    }
+  ],
+  "cloudSmokePassed": true,
+  "integrationTestsPassed": 4,
+  "browserTestsPassed": 4,
+  "healthReadyHttpStatus": 200,
+  "metricsHttpStatus": 200,
+  "structuredLogsVerifiedOnBothReplicas": true,
+  "temporaryPlaintextParametersRemoved": true,
+  "otlpCollectorDeployed": false,
+  "cloudLoadBenchmarkPerformed": false,
+  "localBenchmarkUnchanged": {
+    "p95Milliseconds": 48.44,
+    "connections": 1000
+  }
+}

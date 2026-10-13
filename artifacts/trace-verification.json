@@ -1,0 +1,323 @@
+{
+  "traceId": "2840f258e71feba50f5626c383370e42",
+  "spans": [
+    {
+      "name": "redis.receive",
+      "spanId": "f6fb167fa8377fb2",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "2840f258e71feba50f5626c383370e42",
+          "spanID": "9ab8bd318a6033e6"
+        }
+      ],
+      "instance": "6e7c3971a86c"
+    },
+    {
+      "name": "redis.receive",
+      "spanId": "b09d0b89f67639c5",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "2840f258e71feba50f5626c383370e42",
+          "spanID": "ed8872b7424eba6e"
+        }
+      ],
+      "instance": "6e7c3971a86c"
+    },
+    {
+      "name": "document.commit",
+      "spanId": "3960f0981f866b0c",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "2840f258e71feba50f5626c383370e42",
+          "spanID": "c248490b59ce930d"
+        }
+      ],
+      "instance": "df8b8db48e6b"
+    },
+    {
+      "name": "redis.publish",
+      "spanId": "9ab8bd318a6033e6",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "2840f258e71feba50f5626c383370e42",
+          "spanID": "3960f0981f866b0c"
+        }
+      ],
+      "instance": "df8b8db48e6b"
+    },
+    {
+      "name": "redis.publish",
+      "spanId": "ed8872b7424eba6e",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "2840f258e71feba50f5626c383370e42",
+          "spanID": "fc9acc4412d8b43f"
+        }
+      ],
+      "instance": "df8b8db48e6b"
+    },
+    {
+      "name": "CONNECT syncspace",
+      "spanId": "9656539f02ee1e82",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "2840f258e71feba50f5626c383370e42",
+          "spanID": "3960f0981f866b0c"
+        }
+      ],
+      "instance": "df8b8db48e6b"
+    },
+    {
+      "name": "redis.publish",
+      "spanId": "9ba5c6d11de6a36d",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "2840f258e71feba50f5626c383370e42",
+          "spanID": "1e2db54d6f7ef812"
+        }
+      ],
+      "instance": "df8b8db48e6b"
+    },
+    {
+      "name": "document.commit",
+      "spanId": "fc9acc4412d8b43f",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "2840f258e71feba50f5626c383370e42",
+          "spanID": "c248490b59ce930d"
+        }
+      ],
+      "instance": "df8b8db48e6b"
+    },
+    {
+      "name": "redis.publish",
+      "spanId": "99c1f1d53337c7af",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "2840f258e71feba50f5626c383370e42",
+          "spanID": "c248490b59ce930d"
+        }
+      ],
+      "instance": "df8b8db48e6b"
+    },
+    {
+      "name": "postgresql",
+      "spanId": "1cdf2a8cfc3e96dd",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "2840f258e71feba50f5626c383370e42",
+          "spanID": "c248490b59ce930d"
+        }
+      ],
+      "instance": "df8b8db48e6b"
+    },
+    {
+      "name": "postgresql",
+      "spanId": "30b4c7f59d7897c1",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "2840f258e71feba50f5626c383370e42",
+          "spanID": "3960f0981f866b0c"
+        }
+      ],
+      "instance": "df8b8db48e6b"
+    },
+    {
+      "name": "postgresql",
+      "spanId": "c08003f87716049e",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "2840f258e71feba50f5626c383370e42",
+          "spanID": "1e2db54d6f7ef812"
+        }
+      ],
+      "instance": "df8b8db48e6b"
+    },
+    {
+      "name": "postgresql",
+      "spanId": "1b0f4d575b8bdc45",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "2840f258e71feba50f5626c383370e42",
+          "spanID": "1e2db54d6f7ef812"
+        }
+      ],
+      "instance": "df8b8db48e6b"
+    },
+    {
+      "name": "postgresql",
+      "spanId": "c08b4afe8fe991b2",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "2840f258e71feba50f5626c383370e42",
+          "spanID": "fc9acc4412d8b43f"
+        }
+      ],
+      "instance": "df8b8db48e6b"
+    },
+    {
+      "name": "redis.receive",
+      "spanId": "f9f3b5d46a9af71e",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "2840f258e71feba50f5626c383370e42",
+          "spanID": "9ba5c6d11de6a36d"
+        }
+      ],
+      "instance": "6e7c3971a86c"
+    },
+    {
+      "name": "redis.receive",
+      "spanId": "ef12cf99bf91acac",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "2840f258e71feba50f5626c383370e42",
+          "spanID": "99c1f1d53337c7af"
+        }
+      ],
+      "instance": "6e7c3971a86c"
+    },
+    {
+      "name": "document.commit",
+      "spanId": "1e2db54d6f7ef812",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "2840f258e71feba50f5626c383370e42",
+          "spanID": "c248490b59ce930d"
+        }
+      ],
+      "instance": "df8b8db48e6b"
+    },
+    {
+      "name": "postgresql",
+      "spanId": "022a67c448fe4557",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "2840f258e71feba50f5626c383370e42",
+          "spanID": "3960f0981f866b0c"
+        }
+      ],
+      "instance": "df8b8db48e6b"
+    },
+    {
+      "name": "postgresql",
+      "spanId": "1faf8f535b8ccd8b",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "2840f258e71feba50f5626c383370e42",
+          "spanID": "3960f0981f866b0c"
+        }
+      ],
+      "instance": "df8b8db48e6b"
+    },
+    {
+      "name": "postgresql",
+      "spanId": "9cec356edefee20c",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "2840f258e71feba50f5626c383370e42",
+          "spanID": "1e2db54d6f7ef812"
+        }
+      ],
+      "instance": "df8b8db48e6b"
+    },
+    {
+      "name": "postgresql",
+      "spanId": "015f66cd6d1fa844",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "2840f258e71feba50f5626c383370e42",
+          "spanID": "fc9acc4412d8b43f"
+        }
+      ],
+      "instance": "df8b8db48e6b"
+    },
+    {
+      "name": "postgresql",
+      "spanId": "d55e7fce335fa9b8",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "2840f258e71feba50f5626c383370e42",
+          "spanID": "fc9acc4412d8b43f"
+        }
+      ],
+      "instance": "df8b8db48e6b"
+    },
+    {
+      "name": "postgresql",
+      "spanId": "104b37bdf59e4e9f",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "2840f258e71feba50f5626c383370e42",
+          "spanID": "c248490b59ce930d"
+        }
+      ],
+      "instance": "df8b8db48e6b"
+    },
+    {
+      "name": "postgresql",
+      "spanId": "6204b70f778d6051",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "2840f258e71feba50f5626c383370e42",
+          "spanID": "3960f0981f866b0c"
+        }
+      ],
+      "instance": "df8b8db48e6b"
+    },
+    {
+      "name": "postgresql",
+      "spanId": "9bcd5d53b078cae4",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "2840f258e71feba50f5626c383370e42",
+          "spanID": "1e2db54d6f7ef812"
+        }
+      ],
+      "instance": "df8b8db48e6b"
+    },
+    {
+      "name": "postgresql",
+      "spanId": "76d084d78dcd7b34",
+      "references": [
+        {
+          "refType": "CHILD_OF",
+          "traceID": "2840f258e71feba50f5626c383370e42",
+          "spanID": "fc9acc4412d8b43f"
+        }
+      ],
+      "instance": "df8b8db48e6b"
+    },
+    {
+      "name": "GET /ws/documents/{id:guid}",
+      "spanId": "c248490b59ce930d",
+      "references": [],
+      "instance": "df8b8db48e6b"
+    }
+  ]
+}

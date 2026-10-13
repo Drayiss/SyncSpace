@@ -1,0 +1,13 @@
+{
+  "verifiedAt": "2026-10-11T19:04:52.909Z",
+  "url": "https://syncspace-app.whiteriver-3fe4479b.westus3.azurecontainerapps.io",
+  "healthStatus": 200,
+  "websocketClients": 12,
+  "durableDeliveries": 12,
+  "redisCrossReplicaDeliveries": 5,
+  "documentId": "18bb4f5d-0783-4d88-95cd-ab181c83434f",
+  "persistedRevision": 1,
+  "historyText": "SyncSpace is live on Azure.",
+  "idempotentRetry": true,
+  "reconnectSnapshot": true
+}

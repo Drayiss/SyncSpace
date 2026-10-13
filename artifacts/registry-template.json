@@ -1,0 +1,79 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "bicep",
+      "version": "0.48.1.52935",
+      "templateHash": "9554320423954659225"
+    }
+  },
+  "parameters": {
+    "location": {
+      "type": "string",
+      "defaultValue": "[resourceGroup().location]"
+    },
+    "prefix": {
+      "type": "string",
+      "defaultValue": "syncspace"
+    }
+  },
+  "variables": {
+    "suffix": "[uniqueString(resourceGroup().id)]"
+  },
+  "resources": [
+    {
+      "type": "Microsoft.ContainerRegistry/registries",
+      "apiVersion": "2023-07-01",
+      "name": "[format('{0}{1}', parameters('prefix'), variables('suffix'))]",
+      "location": "[parameters('location')]",
+      "tags": {
+        "project": "SyncSpace"
+      },
+      "sku": {
+        "name": "Basic"
+      },
+      "properties": {
+        "adminUserEnabled": false
+      }
+    },
+    {
+      "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
+      "apiVersion": "2023-01-31",
+      "name": "[format('{0}-image-pull', parameters('prefix'))]",
+      "location": "[parameters('location')]",
+      "tags": {
+        "project": "SyncSpace"
+      }
+    },
+    {
+      "type": "Microsoft.Authorization/roleAssignments",
+      "apiVersion": "2022-04-01",
+      "scope": "[resourceId('Microsoft.ContainerRegistry/registries', format('{0}{1}', parameters('prefix'), variables('suffix')))]",
+      "name": "[guid(resourceId('Microsoft.ContainerRegistry/registries', format('{0}{1}', parameters('prefix'), variables('suffix'))), resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-image-pull', parameters('prefix'))), 'AcrPull')]",
+      "properties": {
+        "principalId": "[reference(resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-image-pull', parameters('prefix'))), '2023-01-31').principalId]",
+        "principalType": "ServicePrincipal",
+        "roleDefinitionId": "[subscriptionResourceId('Microsoft.Authorization/roleDefinitions', '7f951dda-4ed3-4680-a7ca-43fe172d538d')]"
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-image-pull', parameters('prefix')))]",
+        "[resourceId('Microsoft.ContainerRegistry/registries', format('{0}{1}', parameters('prefix'), variables('suffix')))]"
+      ]
+    }
+  ],
+  "outputs": {
+    "registryName": {
+      "type": "string",
+      "value": "[format('{0}{1}', parameters('prefix'), variables('suffix'))]"
+    },
+    "loginServer": {
+      "type": "string",
+      "value": "[reference(resourceId('Microsoft.ContainerRegistry/registries', format('{0}{1}', parameters('prefix'), variables('suffix'))), '2023-07-01').loginServer]"
+    },
+    "identityName": {
+      "type": "string",
+      "value": "[format('{0}-image-pull', parameters('prefix'))]"
+    }
+  }
+}

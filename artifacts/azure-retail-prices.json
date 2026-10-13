@@ -1,0 +1,142 @@
+[
+  {
+    "serviceName": "Azure Database for PostgreSQL",
+    "productName": "Azure Database for PostgreSQL Flexible Server Burstable BS Series Compute",
+    "skuName": "B1MS",
+    "meterName": "B1MS",
+    "retailPrice": 0.017,
+    "unitOfMeasure": "1 Hour",
+    "armRegionName": "westus3",
+    "effectiveStartDate": "2022-08-01T00:00:00Z"
+  },
+  {
+    "serviceName": "Azure Database for PostgreSQL",
+    "productName": "Azure Database for PostgreSQL Flexible Server Backup Storage",
+    "skuName": "Backup Storage LRS",
+    "meterName": "Backup Storage LRS Data Stored",
+    "retailPrice": 0.095,
+    "unitOfMeasure": "1 GB/Month",
+    "armRegionName": "westus3",
+    "effectiveStartDate": "2021-06-01T00:00:00Z"
+  },
+  {
+    "serviceName": "Azure Container Apps",
+    "productName": "Azure Container Apps",
+    "skuName": "Standard",
+    "meterName": "Standard vCPU Active Usage",
+    "retailPrice": 2.4E-05,
+    "unitOfMeasure": "1 Second",
+    "armRegionName": "westus3",
+    "effectiveStartDate": "2022-06-01T00:00:00Z"
+  },
+  {
+    "serviceName": "Azure Container Apps",
+    "productName": "Azure Container Apps",
+    "skuName": "Standard",
+    "meterName": "Standard vCPU Idle Usage",
+    "retailPrice": 3E-06,
+    "unitOfMeasure": "1 Second",
+    "armRegionName": "westus3",
+    "effectiveStartDate": "2022-06-01T00:00:00Z"
+  },
+  {
+    "serviceName": "Azure Container Apps",
+    "productName": "Azure Container Apps",
+    "skuName": "Standard",
+    "meterName": "Standard NC A100 v4 GPU Usage",
+    "retailPrice": 0.000529,
+    "unitOfMeasure": "1 Second",
+    "armRegionName": "westus3",
+    "effectiveStartDate": "2026-04-01T00:00:00Z"
+  },
+  {
+    "serviceName": "Azure Container Apps",
+    "productName": "Azure Container Apps",
+    "skuName": "Standard",
+    "meterName": "Standard NC T4 v3 GPU Usage",
+    "retailPrice": 7.3E-05,
+    "unitOfMeasure": "1 Second",
+    "armRegionName": "westus3",
+    "effectiveStartDate": "2026-04-01T00:00:00Z"
+  },
+  {
+    "serviceName": "Azure Container Apps",
+    "productName": "Azure Container Apps",
+    "skuName": "Standard",
+    "meterName": "Standard Requests",
+    "retailPrice": 0.4,
+    "unitOfMeasure": "1M",
+    "armRegionName": "westus3",
+    "effectiveStartDate": "2022-06-01T00:00:00Z"
+  },
+  {
+    "serviceName": "Azure Container Apps",
+    "productName": "Azure Container Apps",
+    "skuName": "Standard",
+    "meterName": "Standard Memory Idle Usage",
+    "retailPrice": 3E-06,
+    "unitOfMeasure": "1 GiB Second",
+    "armRegionName": "westus3",
+    "effectiveStartDate": "2022-06-01T00:00:00Z"
+  },
+  {
+    "serviceName": "Azure Container Apps",
+    "productName": "Azure Container Apps",
+    "skuName": "Standard",
+    "meterName": "Standard Memory Active Usage",
+    "retailPrice": 3E-06,
+    "unitOfMeasure": "1 GiB Second",
+    "armRegionName": "westus3",
+    "effectiveStartDate": "2022-06-01T00:00:00Z"
+  },
+  {
+    "serviceName": "Redis Cache",
+    "productName": "Azure Managed Redis - Balanced",
+    "skuName": "B0",
+    "meterName": "B0 Cache Instance",
+    "retailPrice": 0.016,
+    "unitOfMeasure": "1 Hour",
+    "armRegionName": "westus3",
+    "effectiveStartDate": "2025-12-01T00:00:00Z"
+  },
+  {
+    "serviceName": "Azure Database for PostgreSQL",
+    "productName": "Azure Database for PostgreSQL Flex Server Storage",
+    "skuName": "Storage",
+    "meterName": "Storage Data Stored",
+    "retailPrice": 0.115,
+    "unitOfMeasure": "1 GB/Month",
+    "armRegionName": "westus3",
+    "effectiveStartDate": "2022-08-01T00:00:00Z"
+  },
+  {
+    "serviceName": "Log Analytics",
+    "productName": "Log Analytics",
+    "skuName": "Analytics Logs",
+    "meterName": "Analytics Logs Data Ingestion",
+    "retailPrice": 0.0,
+    "unitOfMeasure": "1 GB",
+    "armRegionName": "westus3",
+    "effectiveStartDate": "2022-08-01T00:00:00Z"
+  },
+  {
+    "serviceName": "Log Analytics",
+    "productName": "Log Analytics",
+    "skuName": "Analytics Logs",
+    "meterName": "Analytics Logs Data Ingestion",
+    "retailPrice": 2.3,
+    "unitOfMeasure": "1 GB",
+    "armRegionName": "westus3",
+    "effectiveStartDate": "2022-08-01T00:00:00Z"
+  },
+  {
+    "serviceName": "Container Registry",
+    "productName": "Container Registry",
+    "skuName": "Basic",
+    "meterName": "Basic Registry Unit",
+    "retailPrice": 0.1666,
+    "unitOfMeasure": "1/Day",
+    "armRegionName": "westus3",
+    "effectiveStartDate": "2021-04-20T00:00:00Z"
+  }
+]

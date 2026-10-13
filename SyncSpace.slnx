@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/backend/">
+    <Project Path="backend/SyncSpace.Api/SyncSpace.Api.csproj" />
+    <Project Path="backend/SyncSpace.Tests/SyncSpace.Tests.csproj" />
+  </Folder>
+</Solution>

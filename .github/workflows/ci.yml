@@ -1,0 +1,35 @@
+name: verify
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with: { dotnet-version: '10.0.x' }
+      - uses: actions/setup-node@v4
+        with: { node-version: '24' }
+      - run: dotnet test backend/SyncSpace.Tests
+      - run: npm ci --prefix frontend
+      - run: npm test --prefix frontend
+      - run: npm run build --prefix frontend
+      - run: docker compose --profile scale up --build -d
+      - run: |
+          for i in $(seq 1 60); do
+            if curl -fsS http://127.0.0.1:5080/health/ready && curl -fsS http://127.0.0.1:5081/health/ready; then exit 0; fi
+            sleep 2
+          done
+          docker compose logs
+          exit 1
+      - run: npm ci --prefix tests
+      - run: npm run integration --prefix tests
+      - run: npm run resilience --prefix tests
+      - run: npx playwright install --with-deps chromium
+        working-directory: tests
+      - run: npm run e2e --prefix tests
+        env: { WEB_BASE: 'http://127.0.0.1:5080' }
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: verification, path: artifacts/ }
+      - run: docker compose --profile scale down
+        if: always()

@@ -1,0 +1,12 @@
+**/bin/
+**/obj/
+**/node_modules/
+frontend/dist/
+.env
+.azure/
+artifacts/*.log
+artifacts/playwright/
+*.user
+TestResults/
+infra/main.bicepparam
+frontend/tsconfig.tsbuildinfo

@@ -1,0 +1,39 @@
+{
+  "startedAt": "2026-10-11T17:07:06.268Z",
+  "finishedAt": "2026-10-11T17:07:45.442Z",
+  "environment": {
+    "platform": "win32",
+    "node": "v24.18.0",
+    "apiInstances": 2,
+    "transport": "WebSocket",
+    "persistence": "PostgreSQL",
+    "broadcast": "Redis Pub/Sub",
+    "deployment": "Docker production containers; same-machine Windows load generator"
+  },
+  "configuration": {
+    "connections": 1000,
+    "rooms": 10,
+    "durationSeconds": 30,
+    "warmupSeconds": 5,
+    "editIntervalMs": 200,
+    "syncIntervalMs": 5000,
+    "presenceIntervalMs": 10000
+  },
+  "results": {
+    "peakConcurrentConnections": 1000,
+    "minimumConnectionsDuringMeasurement": 1000,
+    "peakConnectionsDuringMeasurement": 1000,
+    "committedBatches": 1480,
+    "expectedPeerDeliveries": 146520,
+    "observedPeerDeliveries": 146520,
+    "deliveryRatio": 1,
+    "errors": 0,
+    "persistenceConsistent": true,
+    "p50Ms": 14.99,
+    "p95Ms": 48.44,
+    "p99Ms": 219.98,
+    "crossInstanceSamples": 74000,
+    "crossInstanceP95Ms": 50.24
+  },
+  "definition": "Time from a writer sending an edit until another client receives the committed edit event. Excludes sender acknowledgements, duplicate broadcasts and warmup; uses one monotonic clock in the load generator."
+}

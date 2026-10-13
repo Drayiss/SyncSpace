@@ -1,0 +1,15 @@
+{
+  "name": "syncspace-verification",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "integration": "node --test integration.mjs",
+    "resilience": "node --test resilience.mjs",
+    "load": "node load.mjs",
+    "e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1",
+    "ws": "^8.22.0"
+  }
+}
